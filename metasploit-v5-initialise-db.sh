@@ -20,5 +20,6 @@ expect -exact "Add data service connection to local msfconsole and persist as de
 send -- "yes\r"
 expect -exact "Data service connection name?\[local-https-data-service\]: "
 send -- "\r"
-
+expect ">"
+send -- "exit\r"
 expect eof
